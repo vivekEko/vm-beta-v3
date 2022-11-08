@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* snap scrolling */
+html,
+body {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
