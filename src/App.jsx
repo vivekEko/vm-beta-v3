@@ -11,6 +11,7 @@ import Sidebar from "./components/globalComponents/Sidebar";
 
 // components
 import Landing from "./pages/Landing";
+import Header from "./components/globalComponents/Header";
 
 function App() {
   const [currentPath, setCurrentPath] = useRecoilState(currentPathAtom);
@@ -22,7 +23,8 @@ function App() {
   }, [location]);
 
   return (
-    <div>
+    <div className="font-oswald">
+      <div>{/* <Header /> */}</div>
       <div>
         <Sidebar />
       </div>
