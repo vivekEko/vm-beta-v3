@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caladea:wght@400;700&family=Oswald:wght@200;300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -15,7 +15,34 @@ body {
   font-family: "Oswald", sans-serif;
 }
 
+.font-caladea {
+  font-family: "Caladea", serif;
+}
+
 /* Text stroke */
 .text-stroke {
   -webkit-text-stroke: 1px white;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f2f2f2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  transition: all 0.3s ease-in-out;
+  background: rgb(168, 168, 168);
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #929292;
 }

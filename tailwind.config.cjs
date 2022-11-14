@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-image": "url('/src/assets/img/landingPage/hero_pc_bg.png')",
+        "hero-image": "url('/src/assets/img/landingPage/hero_pc_bg_2.png')",
         // 'hero-pc': "url('/img/footer-texture.png')",
       },
     },

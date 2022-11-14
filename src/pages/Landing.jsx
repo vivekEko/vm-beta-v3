@@ -11,18 +11,20 @@ import ThirdSection from "../components/landingPage/ThirdSection";
 import FourthSection from "../components/landingPage/FourthSection";
 import FifthSection from "../components/landingPage/FifthSection";
 import Footer from "../components/globalComponents/Footer";
+import EventSection from "../components/landingPage/EventSection";
 
 const Landing = () => {
   // Global variables
   const [sidebarStatus, setSidebarStatus] = useRecoilState(sidebarStatusAtom);
   return (
-    <div className="">
+    <div className="h-[200vh]">
       <HeroSection />
+      {/* <EventSection /> */}
       <SecondSection />
-      <ThirdSection />
-      <FourthSection />
-      <FifthSection />
-      <Footer />
+      {/* <ThirdSection /> */}
+      {/* <FourthSection /> */}
+      {/* <FifthSection /> */}
+      {/* <Footer /> */}
     </div>
   );
 };

@@ -9,16 +9,16 @@ const SecondSection = () => {
     <section className="bg-[#7CC0F1]  pt-20 border-b-[12px] border-[#942200] snap-start snap-always h-screen">
       <div className="flex flex-col justify-between h-full">
         <div>
-          <h1 className="uppercase text-[#191689] text-3xl md:text-4xl md:font-semibold text-center">
+          <h1 className="uppercase text-[#191689] text-[1.4rem] sm:text-[1.6rem] lg:text-3xl xl:text-5xl  font-semibold text-center">
             Sri Vanamamalai divyadesam
           </h1>
-          <h2 className="uppercase text-[#191689] text-xl text-center my-5 w-[80%] mx-auto font-semibold">
+          <h2 className="uppercase text-[#191689] text-xl text-center my-5 w-[80%] mx-auto  sm:text-lg lg:text-xl xl:text-2xl ">
             Sri varamangai nachiyar sametha sri deivanayaga perumal
           </h2>
 
           <p
             className="font-caladea text-center w-[80%] md:max-w-[70%]
-      lg:max-w-[60%] xl:max-w-[50%] mx-auto mb-5"
+      lg:max-w-[60%] xl:max-w-[50%] mx-auto mb-5 sm:text-lg xl:text-xl"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
             pellentesque quam vitae ornare porta. Vivamus pretium eleifend risus
