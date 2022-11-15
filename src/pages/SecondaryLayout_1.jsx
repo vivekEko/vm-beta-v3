@@ -110,9 +110,9 @@ const SecondaryLayout_1 = () => {
 
       {/* content */}
       <div>
-        <div className="w-[90%] mx-auto  pt-10 md:pt-20">
+        <div className="  pt-10 md:pt-20 ">
           {/* content title */}
-          <div>
+          <div className="w-[90%] mx-auto">
             <h2 className="text-[#AB0000] uppercase text-2xl md:text-3xl xl:text-4xl font-semibold">
               {pageData?.content?.title}
             </h2>
@@ -122,8 +122,8 @@ const SecondaryLayout_1 = () => {
           </div>
 
           {/* content flex */}
-          <div className=" mt-10 flex flex-col md:flex-row gap-5">
-            <div className="md:w-[30%]">
+          <div className=" mt-10 flex flex-col md:flex-row gap-5 md:w-[95%] ml-auto ">
+            <div className="md:w-[30%] w-[90%] mx-auto">
               <img src={frame} alt="..." className="w-[50%] md:w-full " />
             </div>
 
@@ -147,7 +147,7 @@ const SecondaryLayout_1 = () => {
                   );
                 })}
               </div>
-              <div className="font-caladea sm:text-lg xl:text-xl pt-10">
+              <div className="font-caladea sm:text-lg xl:text-xl pt-10 w-[90%] mx-auto md:w-full">
                 <p>
                   {pageData?.content?.tab_data[activeTab]?.content[0]?.data}
                 </p>

@@ -185,9 +185,13 @@ const Sidebar = () => {
         <button
           className={` ${
             currentPath?.pathname === "/"
-              ? "fixed top-9 left-2 md:left-5 lg:left-8 xl:left-10 text-xl text-white "
+              ? "fixed top-9 left-2 md:left-5 lg:left-8 xl:left-10 text-xl  font-bold "
               : "hidden"
-          } `}
+          } 
+          
+          ${sidebarStatus ? "text-white" : "text-[#630000]"}
+
+          `}
           onClick={() => setSidebarStatus(!sidebarStatus)}
         >
           MENU
@@ -206,7 +210,7 @@ const Sidebar = () => {
                   openedLink === data?.main_link?.link_name
                     ? "bg-[#FF5A29] bg-opacity-[33%]"
                     : ""
-                }  pl-2`}
+                }  pl-2 overflow-y-hidden`}
               >
                 <div className="flex justify-between items-center ">
                   {/* main links */}
@@ -254,12 +258,12 @@ const Sidebar = () => {
                     openedLink === data?.main_link?.link_name
                       ? "max-h-[300px] ease-in duration-300 "
                       : "max-h-0 ease-out overflow-y-hidden duration-300"
-                  } transition-all text-white `}
+                  } transition-all text-white   `}
                 >
                   {data?.sub_links?.map((sub_data, sub_index) => {
                     return (
                       <button key={sub_index} className="block">
-                        <h1 className="text-white">
+                        <h1 className="text-white py-3 pl-16 uppercase">
                           {sub_data?.sub_link_name}
                         </h1>
                       </button>
