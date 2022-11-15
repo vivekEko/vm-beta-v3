@@ -35,11 +35,14 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-white text-black md:sticky bottom-0">
-      <div className="flex  flex-col justify-start items-start md:flex-row md:justify-between md:items-center w-[85%] md:mx-auto p-5 md:p-3 ">
+    <footer className="bg-white text-black xl:sticky bottom-0">
+      <div className="flex  flex-col justify-start items-start md:flex-row md:justify-between md:items-center flex-wrap gap-5 w-[85%] md:mx-auto p-5 md:p-3 ">
         {footerData?.map((data, index) => {
           return (
-            <div className=" flex flex-row-reverse justify-between gap-2 items-center my-5 md:my-0">
+            <div
+              key={index}
+              className=" flex flex-row-reverse justify-between gap-2 items-center my-5 md:my-0"
+            >
               <h1 className="uppercase">{data?.name}</h1>
               <div>
                 <img src={data?.image} alt={data?.name} />

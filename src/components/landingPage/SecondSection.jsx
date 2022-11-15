@@ -6,7 +6,7 @@ import perumal_thayar_andal from "../../assets/img/landingPage/second_section_im
 
 const SecondSection = () => {
   return (
-    <section className="bg-[#7CC0F1]  pt-20 border-b-[12px] border-[#942200] snap-start snap-always h-screen">
+    <section className="bg-[#7CC0F1]  pt-20 border-b-[12px] border-[#942200] md:snap-start md:snap-always h-screen">
       <div className="flex flex-col justify-between h-full">
         <div>
           <h1 className="uppercase text-[#191689] text-[1.4rem] sm:text-[1.6rem] lg:text-3xl xl:text-5xl  font-semibold text-center">

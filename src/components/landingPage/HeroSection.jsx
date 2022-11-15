@@ -8,7 +8,7 @@ import Header from "../globalComponents/Header";
 
 const HeroSection = () => {
   return (
-    <section className="  snap-start snap-always overflow-y-hidden ">
+    <section className="  md:snap-start md:snap-always overflow-y-hidden ">
       <div className="bg-hero-image h-screen bg-fixed bg-center bg-no-repeat bg-cover border-b-[14px] border-b-[#942200] ">
         <div className="h-full flex flex-col justify-between items-center">
           <Header />
@@ -41,7 +41,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-          <button className="absolute bottom-52 sm:bottom-5 right-5 ">
+          <button className="absolute bottom-52 sm:bottom-5 md:bottom-20 right-5 ">
             <img src={scroll_icon} alt="scroll" className="w-[30px] " />
           </button>
         </div>

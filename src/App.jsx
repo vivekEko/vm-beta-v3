@@ -12,6 +12,7 @@ import Sidebar from "./components/globalComponents/Sidebar";
 // components
 import Landing from "./pages/Landing";
 import Header from "./components/globalComponents/Header";
+import SecondaryLayout_1 from "./pages/SecondaryLayout_1";
 
 function App() {
   const [currentPath, setCurrentPath] = useRecoilState(currentPathAtom);
@@ -23,26 +24,19 @@ function App() {
   }, [location]);
 
   return (
-    <div className="font-oswald">
+    <div className="font-oswald cursor-default">
       <div>{/* <Header /> */}</div>
       <div>
         <Sidebar />
       </div>
       <div
         className={` ${
-          currentPath?.pathname === "/" ? "pl-[0px]" : "pl-[60px]"
+          currentPath?.pathname === "/" ? "pl-[0px]" : "pl-0 md:pl-[60px] "
         } `}
       >
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route
-            path="/about_us"
-            element={
-              <Link to="/">
-                <h1 className="p-5 font-semibold text-3xl">Go to home</h1>
-              </Link>
-            }
-          />
+          <Route path="/sample_page" element={<SecondaryLayout_1 />} />
         </Routes>
       </div>
     </div>

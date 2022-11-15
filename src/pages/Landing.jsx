@@ -17,14 +17,14 @@ const Landing = () => {
   // Global variables
   const [sidebarStatus, setSidebarStatus] = useRecoilState(sidebarStatusAtom);
   return (
-    <div className="h-[200vh]">
+    <div className="">
       <HeroSection />
       {/* <EventSection /> */}
       <SecondSection />
-      {/* <ThirdSection /> */}
-      {/* <FourthSection /> */}
-      {/* <FifthSection /> */}
-      {/* <Footer /> */}
+      <ThirdSection />
+      <FourthSection />
+      <FifthSection />
+      <Footer />
     </div>
   );
 };
