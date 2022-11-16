@@ -32,7 +32,7 @@ const ThirdSection = () => {
           </p>
 
           <div className="flex justify-center md:justify-start w-[80%] mx-auto ">
-            <button className="p-3 bg-[#282626] text-white w-fit  active:scale-95 transition-all">
+            <button className="p-3 px-10 text-lg mt-20 bg-[#282626] text-white w-fit  active:scale-95 transition-all">
               READ MORE
             </button>
           </div>

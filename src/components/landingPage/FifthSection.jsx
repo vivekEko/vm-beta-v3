@@ -28,14 +28,14 @@ const FifthSection = () => {
             qui perferendis veritatis quibusdam odit rem, labore placeat facere
           </p>
 
-          <button className="p-3 bg-[#282626] text-white w-fit mx-auto block active:scale-95 transition-all">
+          <button className="p-3 px-6 bg-[#282626] text-white w-fit mx-auto block active:scale-95 transition-all">
             <span>READ MORE</span>
           </button>
         </div>
 
         <div className="flex flex-col   md:flex-row justify-between">
-          <img src={image1} alt="" className="w-[50%]" />
-          <img src={image2} alt="" className="w-[50%] " />
+          <img src={image1} alt="" className="w-full md:w-[50%]" />
+          <img src={image2} alt="" className="w-[50%] hidden md:block" />
         </div>
       </div>
     </section>

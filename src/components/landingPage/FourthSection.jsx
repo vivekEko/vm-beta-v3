@@ -8,7 +8,7 @@ import file_icon from "../../assets/img/landingPage/file_icon.png";
 
 const FourthSection = () => {
   return (
-    <section className="bg-[#FFB507] pt-10 flex flex-col-reverse gap-5 min-h-screen md:flex-row-reverse border-b-[12px] border-[#942200] justify-between md:snap-start md:snap-always">
+    <section className="bg-[#FFB507] pt-10 py-20 flex flex-col-reverse gap-5 min-h-screen md:flex-row-reverse border-b-[12px] border-[#942200] justify-between md:snap-start md:snap-always">
       <div className="flex justify-between flex-col gap-5 flex-1  ">
         <div className="md:py-20">
           <h1 className="uppercase text-[#55111D] text-center md:text-left  w-[80%] mx-auto text-[1.4rem] sm:text-[1.6rem] lg:text-3xl xl:text-5xl md:font-semibold">
@@ -34,7 +34,7 @@ const FourthSection = () => {
           </p>
 
           <div className="flex justify-center md:justify-start w-[80%] mx-auto ">
-            <button className="p-3 bg-[#282626] text-white w-fit active:scale-95 transition-all ">
+            <button className="p-3 px-6 bg-[#282626] text-white w-fit active:scale-95 transition-all ">
               READ MORE
             </button>
           </div>

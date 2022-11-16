@@ -25,7 +25,7 @@ const SecondSection = () => {
             laoreet pretium. Ut sit amet finibus metus, nec cursus lacus.{" "}
           </p>
 
-          <button className="p-3 px-6 bg-[#282626] text-white w-fit mx-auto block active:scale-95 transition-all">
+          <button className="p-3 px-10 text-lg mt-20 bg-[#282626] text-white w-fit mx-auto block active:scale-95 transition-all">
             <span>READ MORE</span>
           </button>
         </div>
