@@ -122,7 +122,7 @@ const SecondaryLayout_1 = () => {
           </div>
 
           {/* content flex */}
-          <div className=" mt-10 flex flex-col md:flex-row gap-5 md:w-[95%] ml-auto ">
+          <div className=" mt-10 flex flex-col md:flex-row gap-5 md:w-[95%] ml-auto pb-16 ">
             <div className="md:w-[30%] w-[90%] mx-auto">
               <img src={frame} alt="..." className="w-[50%] md:w-full " />
             </div>
@@ -147,7 +147,7 @@ const SecondaryLayout_1 = () => {
                   );
                 })}
               </div>
-              <div className="font-caladea sm:text-lg xl:text-xl pt-10 w-[90%] mx-auto md:w-full">
+              <div className="font-caladea sm:text-lg xl:text-xl pt-10 w-[90%] mx-auto md:w-full ">
                 <p>
                   {pageData?.content?.tab_data[activeTab]?.content[0]?.data}
                 </p>
