@@ -25,7 +25,6 @@ function App() {
 
   return (
     <div className="font-oswald cursor-default">
-      <div>{/* <Header /> */}</div>
       <div>
         <Sidebar />
       </div>
