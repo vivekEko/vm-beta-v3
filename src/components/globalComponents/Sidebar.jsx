@@ -48,7 +48,7 @@ const Sidebar = () => {
 
     {
       main_link: {
-        link_name: "Sample",
+        link_name: "layout 1",
         link_path: "/sample_page",
       },
 
@@ -77,38 +77,8 @@ const Sidebar = () => {
     },
     {
       main_link: {
-        link_name: "Page 3",
-        link_path: "/",
-      },
-
-      sub_links: [
-        {
-          sub_link_name: "Level 1",
-          sub_link_path: "/",
-        },
-        {
-          sub_link_name: "Level 2",
-          sub_link_path: "/",
-        },
-        {
-          sub_link_name: "Level 3",
-          sub_link_path: "/",
-        },
-        {
-          sub_link_name: "Level 4",
-          sub_link_path: "/",
-        },
-        {
-          sub_link_name: "Level 5",
-          sub_link_path: "/",
-        },
-      ],
-    },
-
-    {
-      main_link: {
-        link_name: "Page 4",
-        link_path: "/",
+        link_name: "layout 2",
+        link_path: "/albums",
       },
 
       sub_links: [
@@ -153,8 +123,8 @@ const Sidebar = () => {
         sidebarStatus
           ? "w-[100%] ease-in"
           : currentPath?.pathname !== "/"
-          ? "w-[0%] ease-out overflow-hidden  min-w-[0px] md:w-[0.1%] md:min-w-[60px]"
-          : "w-[0%] ease-out overflow-hidden  min-w-[0px]"
+          ? "w-[0%] ease-out   min-w-[0px] md:w-[0.1%] md:min-w-[60px]"
+          : "w-[0%] ease-out  min-w-[0px]"
       } h-screen bg-[#FC8D0B] fixed top-0 bottom-0  max-w-[300px] transition-all duration-300  shadow-2xl  `}
     >
       <div className=" overflow-x-hidden">
@@ -163,7 +133,7 @@ const Sidebar = () => {
           onClick={() => setSidebarStatus(!sidebarStatus)}
           className={` ${
             currentPath?.pathname === "/" ? "hidden" : "flex"
-          } w-[30px] h-[25px] mt-5 flex-col justify-between gap-2 mr-auto cursor-pointer ml-2`}
+          } w-[30px] h-[25px] mt-5 flex-col justify-between gap-2 mr-auto cursor-pointer ml-2 `}
         >
           <div
             className={` ${
@@ -196,6 +166,38 @@ const Sidebar = () => {
         >
           MENU
         </button>
+
+        <button
+          className={` ${
+            currentPath?.pathname !== "/"
+              ? "fixed top-0 left-0 md:left-5 lg:left-8 xl:left-10 text-xl  font-bold md:hidden "
+              : "hidden"
+          } 
+
+
+          
+          `}
+          onClick={() => setSidebarStatus(!sidebarStatus)}
+        >
+          <div className="w-[30px] h-[25px] mt-5 flex flex-col justify-between gap-2 mr-auto cursor-pointer ml-2 ">
+            <div
+              className={` ${
+                sidebarStatus ? "rotate-45 translate-y-3 " : "rotate-0"
+              } h-[4px] border-full bg-white rounded-full transition-all duration-300`}
+            ></div>
+            <div
+              className={` ${
+                sidebarStatus ? "hidden" : "block"
+              } h-[4px] border-full bg-white rounded-full transition-all duration-300`}
+            ></div>
+            <div
+              className={` ${
+                sidebarStatus ? "-rotate-45 -translate-y-2" : "rotate-0"
+              } h-[4px] border-full bg-white rounded-full transition-all duration-300`}
+            ></div>
+          </div>
+        </button>
+
         <div
           className={` ${
             currentPath?.pathname === "/" ? "mt-[7.5rem]" : "mt-20"
