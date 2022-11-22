@@ -1,5 +1,6 @@
 // react
 import React from "react";
+import { Parallax, ParallaxLayer } from "react-parallax";
 
 // assets
 import landing_hero_section_idol from "../../assets/img/landingPage/ponnadikkal_jeeyar-2.png";
@@ -8,8 +9,16 @@ import Header from "../globalComponents/Header";
 
 const HeroSection = () => {
   return (
-    <section className="  md:snap-start md:snap-always overflow-y-hidden ">
+    <section className="md:snap-start md:snap-always overflow-y-hidden ">
       <div className="bg-hero-image h-screen bg-fixed bg-center bg-no-repeat bg-cover border-b-[14px] border-b-[#942200] ">
+        {/* <ScrollParallax> */}
+        {/* <Parallax pages={1.45}>
+          <ParallaxLayer
+            offset={0}
+            speed={0.5}
+            factor={2}
+          > */}
+
         <div className="h-full flex flex-col justify-between items-center">
           <Header />
           <div className="flex justify-between flex-col h-full">
@@ -45,6 +54,9 @@ const HeroSection = () => {
             <img src={scroll_icon} alt="scroll" className="w-[30px] " />
           </button>
         </div>
+        {/* </ParallaxLayer>
+        </Parallax> */}
+        {/* </ScrollParallax> */}
       </div>
     </section>
   );
