@@ -22,7 +22,7 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
-    console.log("changed path");
+    console.log("changed path", location);
     setCurrentPath(location);
   }, [location]);
 

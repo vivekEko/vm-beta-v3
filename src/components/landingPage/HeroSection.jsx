@@ -1,6 +1,6 @@
 // react
 import React from "react";
-import { Parallax, ParallaxLayer } from "react-parallax";
+// import { Parallax, ParallaxLayer } from "react-parallax";
 
 // assets
 import landing_hero_section_idol from "../../assets/img/landingPage/ponnadikkal_jeeyar-2.png";

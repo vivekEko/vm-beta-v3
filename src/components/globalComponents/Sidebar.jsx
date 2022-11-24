@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 //  state manegaement (recoil js)
 import { useRecoilState } from "recoil";
 import currentPathAtom from "../../recoil/helpers/currentPathAtom";
@@ -129,43 +129,45 @@ const Sidebar = () => {
     >
       <div className=" overflow-x-hidden">
         {/* hamburger */}
-        <div
-          onClick={() => setSidebarStatus(!sidebarStatus)}
-          className={` ${
-            currentPath?.pathname === "/" ? "hidden" : "flex"
-          } w-[30px] h-[25px] mt-5 flex-col justify-between gap-2 mr-auto cursor-pointer ml-2 `}
-        >
+        <div>
           <div
+            onClick={() => setSidebarStatus(!sidebarStatus)}
             className={` ${
-              sidebarStatus ? "rotate-45 translate-y-3 " : "rotate-0"
-            } h-[4px] border-full bg-white rounded-full transition-all duration-300`}
-          ></div>
-          <div
-            className={` ${
-              sidebarStatus ? "hidden" : "block"
-            } h-[4px] border-full bg-white rounded-full transition-all duration-300`}
-          ></div>
-          <div
-            className={` ${
-              sidebarStatus ? "-rotate-45 -translate-y-2" : "rotate-0"
-            } h-[4px] border-full bg-white rounded-full transition-all duration-300`}
-          ></div>
-        </div>
+              currentPath?.pathname === "/" ? "hidden" : "flex"
+            } w-[30px] h-[25px] mt-5 flex-col justify-between gap-2 mr-auto cursor-pointer ml-2 `}
+          >
+            <div
+              className={` ${
+                sidebarStatus ? "rotate-45 translate-y-3 " : "rotate-0"
+              } h-[4px] border-full bg-white rounded-full transition-all duration-300`}
+            ></div>
+            <div
+              className={` ${
+                sidebarStatus ? "hidden" : "block"
+              } h-[4px] border-full bg-white rounded-full transition-all duration-300`}
+            ></div>
+            <div
+              className={` ${
+                sidebarStatus ? "-rotate-45 -translate-y-2" : "rotate-0"
+              } h-[4px] border-full bg-white rounded-full transition-all duration-300`}
+            ></div>
+          </div>
 
-        <button
-          className={` ${
-            currentPath?.pathname === "/"
-              ? "fixed top-9 left-2 md:left-5 lg:left-8 xl:left-10 text-xl  font-bold "
-              : "hidden"
-          } 
+          <button
+            className={` ${
+              currentPath?.pathname === "/"
+                ? "fixed top-9 left-2 md:left-5 lg:left-8 xl:left-10 text-xl  font-bold "
+                : "hidden"
+            } 
           
           ${sidebarStatus ? "text-white" : "text-[#630000]"}
 
           `}
-          onClick={() => setSidebarStatus(!sidebarStatus)}
-        >
-          MENU
-        </button>
+            onClick={() => setSidebarStatus(!sidebarStatus)}
+          >
+            MENU
+          </button>
+        </div>
 
         <button
           className={` ${
@@ -216,10 +218,15 @@ const Sidebar = () => {
               >
                 <div className="flex justify-between items-center ">
                   {/* main links */}
-                  <Link to={data?.main_link?.link_path}>
+                  <NavLink
+                    to={data?.main_link?.link_path}
+                    className={({ isActive }) =>
+                      isActive ? "opacity-100" : "opacity-50"
+                    }
+                  >
                     <button
                       onClick={() => setSidebarStatus(false)}
-                      className="flex  flex-[0.9] gap-5 py-5 items-center text-white"
+                      className="flex  flex-[0.9] gap-5 py-5 items-center text-white op"
                     >
                       <div className="bg-white w-[40px] aspect-square rounded-full ">
                         {" "}
@@ -231,7 +238,7 @@ const Sidebar = () => {
                         </h1>
                       </div>
                     </button>
-                  </Link>
+                  </NavLink>
 
                   <div
                     onClick={() => {
