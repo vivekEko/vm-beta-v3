@@ -26,7 +26,7 @@ const Landing = () => {
 
   useEffect(() => {
     axios
-      .get("http://192.168.1.27:8000/landingPage")
+      .get(import.meta.env.VITE_BASE_LINK + "landingPage")
       .then(function (response) {
         console.log(response?.data);
         setLandingPageData(response?.data);
@@ -49,6 +49,7 @@ const Landing = () => {
       <ThirdSection />
       <FourthSection />
       <FifthSection /> */}
+
       {landingPageData?.data?.map((sectionData, sectionIndex) => {
         return (
           <div key={sectionIndex}>
