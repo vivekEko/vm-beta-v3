@@ -45,7 +45,6 @@ const Sidebar = () => {
         },
       ],
     },
-
     {
       main_link: {
         link_name: "layout 1",
