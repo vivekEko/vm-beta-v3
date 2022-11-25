@@ -67,42 +67,7 @@ const Section = (props) => {
           id="landing_page_2"
           className="bg-[#FC8D0B]  pt-20 border-b-[12px] border-[#942200] md:snap-start md:snap-always h-screen"
         >
-          <div className="flex flex-col justify-between h-full">
-            {/* <div>
-              <h1 className="uppercase text-[#191689] text-[1.4rem] sm:text-[1.6rem] lg:text-3xl xl:text-5xl  font-semibold text-center">
-                {props?.apiData?.h1}
-              </h1>
-              <h2 className="uppercase text-[#191689] text-xl text-center my-5 w-[80%] mx-auto  sm:text-lg lg:text-xl xl:text-2xl ">
-                {props?.apiData?.h2}
-              </h2>
-
-              <p
-                className="font-caladea text-center w-[80%] md:max-w-[70%]
-          lg:max-w-[60%] xl:max-w-[50%] mx-auto mb-5 sm:text-lg xl:text-xl"
-              >
-                {props?.apiData?.p}
-              </p>
-
-              <button className="p-3 px-10 text-lg mt-20 bg-[#282626] text-white w-fit mx-auto block active:scale-95 transition-all">
-                <span>READ MORE</span>
-              </button>
-            </div>
-
-            <div className="mt-5 flex items-end justify-between gap-5 overflow-hidden">
-              {props?.apiData?.img?.length > 0 &&
-                props?.apiData?.img?.map((imgData, imgIndex) => {
-                  return (
-                    <div key={imgIndex} className="w-full">
-                      <img
-                        src={import.meta.env.VITE_BASE_LINK + imgData}
-                        alt={imgData}
-                        className="w-full"
-                      />
-                    </div>
-                  );
-                })}
-            </div> */}
-          </div>
+          <div className="flex flex-col justify-between h-full"></div>
         </section>
       )}
       {/*  */}
